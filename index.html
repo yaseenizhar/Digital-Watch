@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Mitr:wght@300&display=swap" rel="stylesheet">
+  <style>
+    .box{
+      height: 200px;
+    width: 55%;
+    background-color: black;
+    margin: auto;
+    margin-top: 20rem;
+    color: white;
+    text-align: center
+    }
+    .box p{
+      padding: 25px;
+    font-size: 110px;
+    color: #1cd3fe;
+    font-family: 'Mitr', sans-serif;
+  }
+    .heading{
+      position: absolute;
+    left: 24rem;
+    bottom: 37rem;
+    font-size: 30px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+    <h2 class="heading">JavaScript clock</h2>
+    <div class="box">
+        <p id="time"> <span id="ap"></span> </p>
+    </div>
+  </div>
+</body>
+          <script>
+            setInterval(() => {
+              a = new Date( );
+            //  let time = a.getHours() + ' : ' + a.getMinutes() + ' : ' + a.getSeconds();
+
+
+            //   document.getElementById('time').innerHTML = time;
+              document.getElementById("time").innerHTML = a.toLocaleTimeString();
+            }, 1000);
+            
+        
+
+          </script>
+</html>
